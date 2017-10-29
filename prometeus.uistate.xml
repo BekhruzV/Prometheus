@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Layout 1</layout>
+        <layout order="3">Main</layout>
+        <event-sheet order="1">First_event </event-sheet>
+        <event-sheet order="2">Function</event-sheet>
+        <event-sheet active="1" order="4">mainSheet</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="1" name="enemies" />
+        <family expanded="1" name="skins" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/1/" />
+        <folder expanded="1" path="object-folder/3/" />
+        <folder expanded="0" path="object-folder/joystick/" />
+        <folder expanded="1" path="object-folder/3/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/pad/" />
+        <folder expanded="1" path="animation-folder/stick/" />
+        <folder expanded="1" path="animation-folder/kick/" />
+        <folder expanded="1" path="animation-folder/magic/" />
+        <folder expanded="1" path="animation-folder/magic2/" />
+        <folder expanded="1" path="animation-folder/magic34/" />
+        <folder expanded="1" path="animation-folder/kick2/" />
+        <folder expanded="1" path="animation-folder/magic4/" />
+        <folder expanded="1" path="animation-folder/magic35/" />
+        <folder expanded="1" path="animation-folder/playerbase/" />
+        <folder expanded="1" path="animation-folder/Up/" />
+        <folder expanded="1" path="animation-folder/down/" />
+        <folder expanded="1" path="animation-folder/right1/" />
+        <folder expanded="1" path="animation-folder/left1/" />
+        <folder expanded="1" path="animation-folder/Player/" />
+        <folder expanded="1" path="animation-folder/wall/" />
+        <folder expanded="1" path="animation-folder/enemy/" />
+        <folder expanded="1" path="animation-folder/enemyView/" />
+        <folder expanded="1" path="animation-folder/Newareachek/" />
+        <folder expanded="1" path="animation-folder/Camera/" />
+        <folder expanded="1" path="animation-folder/enemyUdar/" />
+        <folder expanded="1" path="animation-folder/playerUdar/" />
+        <folder expanded="1" path="animation-folder/krov/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/enemy2/" />
+        <folder expanded="1" path="animation-folder/minotavr/" />
+        <folder expanded="1" path="animation-folder/newgame/" />
+        <folder expanded="1" path="animation-folder/option/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/ramka/" />
+        <folder expanded="1" path="animation-folder/closed/" />
+        <folder expanded="1" path="animation-folder/optionTitle/" />
+        <folder expanded="1" path="animation-folder/sound/" />
+        <folder expanded="1" path="animation-folder/music/" />
+        <folder expanded="1" path="animation-folder/language/" />
+        <folder expanded="1" path="animation-folder/connect/" />
+        <folder expanded="1" path="animation-folder/off/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+    </folders-expanded>
+</c2uistate>

@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mainSheet</name>
+    <events>
+        <event-block sid="839185991437560">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="379177956130315" type="Mouse">
+                    <param id="0" name="Object">newgame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="897434233428411" type="newgame">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="559864996037410">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="875519058394564" type="Mouse">
+                    <param id="0" name="Object">option</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="423725640995169" type="option">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="349038962525810">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="983272189020023" type="Mouse">
+                    <param id="0" name="Object">newgame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="201561925372793" type="newgame">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="678423286330435">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="487746422739664" type="Mouse">
+                    <param id="0" name="Object">option</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="837198550612752" type="option">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="470806658978005">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="839284731212515" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">newgame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="457537904499981" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="282463577368346">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="889151198758230" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="744227586957658" type="Camera">
+                    <param id="0" name="X">lerp(self.X, Sprite6.X, 0.02) </param>
+                    <param id="1" name="Y">lerp(self.Y, Sprite6.Y, 0.02)</param>
+                </action>
+                <action id="0" name="Play" sid="724998655386354" type="Audio">
+                    <param id="0" name="Audio file">358232_j_s_song</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">100</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="541028929549260">
+            <conditions>
+                <condition id="3" name="On touched object" sid="615146363458373" type="Touch">
+                    <param id="0" name="Object">TiledBackground6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="452105921317983" type="Camera">
+                    <param id="0" name="Object">newgame</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="639927523922597">
+            <conditions>
+                <condition id="3" name="On touched object" sid="374721642128510" type="Touch">
+                    <param id="0" name="Object">magic35</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="617045920205785" type="Camera">
+                    <param id="0" name="Object">Sprite6</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="527205990166881">
+            <conditions>
+                <condition id="3" name="On touched object" sid="380164818006852" type="Touch">
+                    <param id="0" name="Object">newgame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="880448895708546" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="841896289606649">
+            <conditions>
+                <condition id="3" name="On touched object" sid="826516084807022" type="Touch">
+                    <param id="0" name="Object">option</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="197548028863173" type="Camera">
+                    <param id="0" name="Object">ramka</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="921454275765612">
+            <conditions>
+                <condition id="3" name="On touched object" sid="126179266107466" type="Touch">
+                    <param id="0" name="Object">closed</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="480456734297355" type="Camera">
+                    <param id="0" name="Object">newgame</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="298225372532028">
+            <conditions>
+                <condition id="3" name="On touched object" sid="144160492888145" type="Touch">
+                    <param id="0" name="Object">soundoff</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="379731248395875">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="111610780421781" type="sound">
+                            <param id="0" name="Instance variable">sounds</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="431122210046235" type="sound">
+                            <param id="0" name="Instance variable">sounds</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="765139914805234">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="734764250425777" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="390184965695098" type="sound">
+                            <param id="0" name="Instance variable">sounds</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="182739237507650">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="641128608511437" type="sound">
+                    <param id="0" name="Instance variable">sounds</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="993039444270359" type="off">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="677799207205435">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="745532449821276" type="sound">
+                    <param id="0" name="Instance variable">sounds</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="145051813489740" type="off">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="565612033297725">
+            <conditions>
+                <condition id="3" name="On touched object" sid="619199929424174" type="Touch">
+                    <param id="0" name="Object">mouseoff</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="348991269106045">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="375998326055265" type="music">
+                            <param id="0" name="Instance variable">mus</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="531812518318386" type="music">
+                            <param id="0" name="Instance variable">mus</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="22" name="Set paused" sid="635613188121369" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="311965497525050">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="190976704233901" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="206176565554151" type="music">
+                            <param id="0" name="Instance variable">mus</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="22" name="Set paused" sid="490334128708626" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="442470819507357">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="209413686654171" type="music">
+                    <param id="0" name="Instance variable">mus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="117953574798217" type="Sprite7">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="866637127670482">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="466101439654268" type="music">
+                    <param id="0" name="Instance variable">mus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="283594729028538" type="Sprite7">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Function</name>
+    <events>
+        <event-group description="" sid="756574373510840" title="function">
+            <sub-events>
+                <event-block sid="276059924384097">
+                    <conditions>
+                        <condition id="0" name="On function" sid="271338399113611" type="Function">
+                            <param id="0" name="Name">&quot;ScaleX&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="974430307471117" type="Function">
+                            <param id="0" name="Value">CanvasToLayerX(&quot;HUD&quot;, touch.AbsoluteXForID(Function.Param(0)), touch.AbsoluteYForID(Function.Param(0)) )</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="936983322983689">
+                    <conditions>
+                        <condition id="0" name="On function" sid="540706376327213" type="Function">
+                            <param id="0" name="Name">&quot;ScaleY&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="279461883669719" type="Function">
+                            <param id="0" name="Value">CanvasToLayerY(&quot;HUD&quot;, touch.AbsoluteXForID(Function.Param(0)), touch.AbsoluteYForID(Function.Param(0)) )</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="191324679723704">
+            <conditions>
+                <condition id="0" name="On function" sid="782993697685866" type="Function">
+                    <param id="0" name="Name">&quot;callEnemies&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="488515004787075" type="System">
+                    <param id="0" name="Object to create">enemies</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">ViewportRight(1) + 64</param>
+                    <param id="3" name="Y">random(390,720)</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="640368067611312" type="enemies">
+                    <param id="0" name="Object">skins</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="133848342783697" type="skins">
+                    <param id="0" name="Pin to">enemies</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-25" name="Move to bottom" sid="809551258017739" type="skins" />
+                <action id="-10" name="Set value" sid="764410802472108" type="skins">
+                    <param id="0" name="Instance variable">skinsUID</param>
+                    <param id="1" name="Value">enemies.UID</param>
+                </action>
+                <action id="-10" name="Set value" sid="779635978369595" type="enemies">
+                    <param id="0" name="Instance variable">jon</param>
+                    <param id="1" name="Value">60</param>
+                </action>
+                <action id="-11" name="Add to" sid="124702975704888" type="Newareachek">
+                    <param id="0" name="Instance variable">scetchik</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="887114227027256">
+            <conditions>
+                <condition id="0" name="On function" sid="935236030817204" type="Function">
+                    <param id="0" name="Name">&quot;createPlayer&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="469462272916350" type="Player" />
+                <action id="-9" name="Destroy" sid="866853621708396" type="playerbase" />
+                <action id="-16" name="Wait" sid="697857852260729" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="-3" name="Create object" sid="806587091104982" type="System">
+                    <param id="0" name="Object to create">playerbase</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">325</param>
+                    <param id="3" name="Y">-152</param>
+                </action>
+                <action id="-3" name="Create object" sid="197159470939959" type="System">
+                    <param id="0" name="Object to create">Player</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">345</param>
+                    <param id="3" name="Y">-281</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="547999874355791" type="Player">
+                    <param id="0" name="Pin to">playerbase</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="588383889293604" type="System">
+                    <param id="0" name="Variable">zero</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="223125408589244">
+            <conditions>
+                <condition id="0" name="On function" sid="299068458787684" type="Function">
+                    <param id="0" name="Name">&quot;enemyCount&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="478802205082965" type="System">
+                    <param id="0" name="Group name">&quot;camera&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="252915933534866" type="wall" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
